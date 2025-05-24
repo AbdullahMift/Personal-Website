@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Miftari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="select-none" id="start">
+    <header class="fixed z-[100]">
+        <nav class="h-[100px] flex flex-row items-center px-20 borderBotoom bg-[white] w-screen">
+            <ul class="flex flex-[1] items-center justify-between w-full h-full">
+                <div class="">
+                    <h1 id="navName">
+                        <a href="#start">
+                            Abdullah Miftari <br />
+                            Personal Web
+                        </a>
+                    </h1>
+                </div>
+                <div class="flex flex-row gap-16 h-full">
+                    <li class="navLi"><a href="#biography">Biography</a></li>
+                    <li class=" navLi"><a href="#education">Education</a></li>
+                    <li class="navLi"><a href="#skills">Skills</a></li>
+                    <li class="navLi"><a href="#hobbies">Hobbies</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero Section borderBotoom pb-24 pt-[270px] h-screen">
+        <div class="w-full flex flex-col items-center">
+            <div class="w-[60%] flex flex-col gap-16 h-full">
+                <h1 class="heroTitle "><span class="font-[500] text-[black]">Hi, I am Abdullah Miftari,</span>
+                    <br>Full-Stack Developer.
+                </h1>
+                <p class="text-[20px] text-[#8b8b8b]">Skilled in <span class="text-[black]">React.js</span> and <span
+                        class="text-[black]">.NET</span>, currently studying at <span class="text-[black]">FSCE</span>.
+                    I love building modern, responsive web applications from front to back.</p>
+                <a href="#biography">
+                    <button class="knowMoreBtn">Know more</button>
+                </a>
+            </div>
+        </div>
+        <div class="w-full flex flex-row items-start">
+            <div
+                class="w-[70%] flex justify-center items-end border rounded-tl-[30px] rounded-br-[0] rounded-tr-[30px] h-[80%] mx-4 rounded-bl-[0] bg-[lightgray]">
+                <img src="images/heroAvatar.png" class="object-cover h-[85%]  " alt="">
+            </div>
+            <div class="w-[10%] h-[80%] border bg-[#3C9189] heroSocials flex flex-col items-center gap-8 py-5">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.svg" alt="" class="heroIcons"></a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook.svg" alt="" class="heroIcons"></a>
+                <a href="https://github.com/" target="_blank">
+                    <img src="images/github-logo.svg" alt="" class="heroIcons"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="h-screen border Section " id="biography">
+        <div class="w-full flex flex-col gap-12 justify-start items-center pb-24 pt-[140px]">
+            <h1 class="text-[50px] garamond italic font-[semibold]">Biography</h1>
+            <p class="w-[70%] text-[23px] text-justify garamond">Hello! I’m <b>Abdullah Miftari</b>, a passionate
+                Full-Stack Developer and a student at the Faculty of Computer Science and Engineering (FSCE), part of
+                Ss. Cyril and Methodius University.
+            <p class="w-[70%] text-[23px] text-justify garamond">
+                My interest in solving logical problems and building useful things for others led me to dive deeper into
+                mathematics and programming.
+            </p>
+
+            <p class="w-[70%] text-[23px] text-justify garamond">
+                Right now, I’m working on improving my skills in modern web development. I also plan to continue my
+                studies in Artificial Intelligence, aiming to understand how intelligent systems can help solve
+                important gaps in society.
+            </p>
+
+        </div>
+        <div class="w-full flex flex-col justify-center items-center gap-4">
+            <img src="images/heroAvatar.jpg" alt="" class="w-[60%] rounded-[70px]">
+            <figcaption class="garamond text-[20px]">Picture taken in Skopje, 2008</figcaption>
+
+        </div>
+    </section>
+
+    <section class=" border  flex flex-col items-center py-[140px]" id="education">
+        <h1 class="text-[50px] garamond italic font-[semibold] mb-14">Education</h1>
+        <div class="bg-[] w-[70%] borderBotoom">
+            <h2 class="text-[40px] garamond italic font-[semibold]">Formal Education</h2>
+        </div>
+        <div class="w-[70%] bg-[]  flex flex-row  gap-12 pt-12">
+
+            <a href="https://zeflushmarku.edu.mk/" target="_blank">
+                <div class="educationCard">
+                    <div><img class="h-[200px] w-full object-cover rounded-t-[19px]"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSExIVFRUVGBgXGBgVGBcYGhcXGBcXFxcVGBcYHSggGBolHRUYITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGysfHyUvLS0tLS0tLS0tLS0tKy0tLS0rLS0tLS0rLS0tLS0tLS0tLS0tLSstLS0tLSstLS0tN//AABEIAMkA+wMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABIEAABAwIDAwgFCQUHBAMAAAABAAIRAyEEEjEFQVEGEyIyYXGBkVKhscHRBxQVQlNygpLhIzNDYvAWJGOissLSNJPj8VSDs//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACcRAAICAgEEAgMAAwEAAAAAAAABAhEDEiEEEzFBFGEiM1EyQrEV/9oADAMBAAIRAxEAPwC1RJUIQvXOEIII4QhABIJUIIASglIEJAEgjQQMJBHCOEAEEEcI0AJRlBGAgQSCNBABBGgjTGEjQRoAJGgjhABIwgjCACSkUJUIAJGjAQQASCUEITCyOgjQISEEgjhBABII0AgAkEaEJAEjhHCCACRJUI4QAmEISoQhACUaOEIQAmEISoQhABQhCVCEJjQSCOEcItAJQhKRwgAoRwjRwgAgEaCVCLASjRwjhACUcI4RwgCNCEJcIQgQiEIS4QhACIQhLhCEgEQhCXCJzgNSB3mPahtLyMKEIVHtblRSouyhj6pIkGllcO4mbFVjuWlZ37vAVD954H+lpWMuogvLLWOT9GvhGsW7lDtF3Vw1Jn3nOcfXCRn2s/8AiMZ9ynf1ysn1cCuzI24CMiNbd9liDyf2jU6+Lq39Ho+yEkcgXO/e1Xv+88n2kqX1i9FrppezX19oUWderTb3vb8VX1+VWCZriafgSfYCqqj8n9BuuX1lTaXI/DN4fl+JWb6t+kV8b7GavLzBDR1R33WO9phRH/KDTP7vC1nfeLWj1Eq7pbAw7dB5BqlN2dSGjf68FL6mf8K+PFezKO5Z4p3UwYH3nOPsATL9u7Uf1adJg+7PtWzOGZBGQDt9Srdp020qbqkOdliwgTJA1jtWE+pyLg0j08GZpztqP62Jyj+QNb7BKY2T87ZiCTXc8sH8Vz3t6XESrzA4vnHOa6mWANLh0g4mCLQAI6wTuyqLTXqyASGU/a8LOWfKrUilhhRZbHxlVzi2q5rpBLS1uWIiRqZ1lXMKtdSDQyoBAp1GzHo1Jpu/1DyVrC9DosrlDlnL1GNRlwJhHCVCIkDePFdfcivLMKYUI0y/F0xq9o/EEy7a1AfxB4X9il58a9otYpvwmTYQAVa/b1HcXHuCZfyjpjRjj3w1Q+qxr2WumyP0XMILN1uU53NYB2un2Jn+1R40/WofWQLXSTNNCKEuEcLrs5RuEIS4RgJWA3CEJyERUuaXserEQqfbez2PIeWNdAiT39quDUbxCg7RdmEC439kXXF1mWPbpM6enxve2jObB2eGUXPa0AZqhtwa5w9gUjZeJbXcQ0OAy5pcIEWsL9qnbBZOFaPS5z1velbK2Q2iZBJ6Ibcza3Z2BeV+POx3U1VEokUW5i6G3JJ0ACYdykoASajjcCzHamwFwlcpP+lJ/kf7QsLiqjw0TTMZ2m5bfpaQCV2YoWlZz5J0zaO5R05gMqExOgHZvPYo1TlP0czaJgGOk+NHZdwWaNWoH3pgEtFi6d54JkVqnNzNMN5zLvJvVifMyttIoy7kjoOFxDnRPNwWlwyZiQQWiHE2PW3KufiqxYHc6GkvY2GsHVdUDMwLiZIn1obAeDUIFUP6DrAM6PTZ6JMz28FQbVr/ALF0VastdYAPgHnBN8gFotdCgh7ujTVaJFbIa1ZzMriZLW6OaA7oMFul7UxUpMisHPdLajmjNUdYBjDxExJ8VU0KVM1XAms4lmaKxfeHiYmLQASoj8KG1ag5kuh7RPRyw6myxzb7zKaSFsy2ofNzSw8mnzhFN2rS+YuSSdSrrGYYVGFh0PfuIO6OCzGysO/m6Lm0WAZWXJvFr9X3rWFcnV8NG+B3dld9Eht2xOm/S3EngFF2WIxNUf4bfU96uwVUYcRi3dtM+p4/5Ll2cnydFKK4LHHAnD1gNcrY784WcdtLFO9IbuuBffYBa7DttUHFvvCxjdmS4yXau+seJVY9v9RtquQn1MQdXD8T3FNOZU+tVpjzPtcrCnshno+ZJT7NlsH1R5LTTIye4ilNMb64/C1vwKGWnvq1Hd0D2NV7WwLQOqPILM1MW4TNYg3sObERI4diqOHJJ1ZMsyirJbWU/Rqu78yUKQ3Yd3j+qrDtBpZesZj0zMwdwSX46lkmXExM/tDFp1WvxJe5GL6qPot7j+Exv3nNSTiXcaI/F+qZ5U4ylSrw9ty1pHRniFksZjabnlwaYPYOCfxV7kDz8+DrT+UtLQZj3MefY2E2eUfo0qh/CB7XLPV9qtaS3LUMHLIyC8xvKKltMucGim7Vou/0vuhLfPLkpRwr0i/O3Kx0on8Tmj2SmX7VxJ3UwO1zj7AFR7R2jzbntDWHK7LLnOvxMSolTbZBPSpC09UG/iVLhnl5ZW+JeDQOxmI31aY7mk8OLuxNTUOuIefusYP9qgbRxTmPADy0FjXdFouTN9DwVLU2wcrSa1c3EkGoPC0BTHDkkrscs8V6NOaBOr67vxOH+mFcbKpBtF8SLnrOLjoN5JWNxWPb8zpVYe4GrUFz0j0QPrG91o+RtUPwj3huUF77eACjLhcU22OGXZ0WPJ0f3an3OPm9ysYUPk+P7rR+77yVPhc0vJqvBE5SUScGI3tqDcPrt4rG7R2aebEud1m9Z8CMx3Detvt9wOFaxpBf0xANxJBEj1rM47B1HMaA6SI3NH1iSbr0sWSKirZw5k2yCcA1tSA6Ja3rGo43J3kaJDMAw0SdTzs5gwT+9FukVZ1cC/nM2aRDbkgacA1M09kOylpdcn0nEdcO0jgFTzQvyQscn6L7Y9Nucm4hpEQIuQZ/yqo2lUpCg5pdvPRmDapppZT9l4cUi4husCw/VRquyw5paZuSZAg3dmS+RApYphVcZS55pHSIY64OklpiAQIPcmcTtBhrPJEZntJbDjMNbeb6R5KXV2UHEOgyBFsvZxHYlU9lAEnKZJnXfbh3JfJin4H2pkDA7SZzbGikbNGjDFuEiy05VZQ2aBAAsO0lWV+C58+TueDfDBxuwNVO3/rB203+1iuYKq6tAjENq2yNa+TI3hsW8FguPJs+S4wn1/uOWVourkYmWkOa+oKfRAkDqxxvvWn2ZXY8uymei4b+CiOb0j3/ANf12rbpvNmWXwU2yWYg0qvO5s98hcGg9X+XTpJzk7hsQ0P58uM5cuZzSdDm6ugmLK6a1LAXcc5msLsmsys6o90sOexe52rpb0SIELFbT2Q91aoQyQXuvIG8rq1cWVaNhMccxc65Ji28zwTjW3IpXqYvBs/YgRfKQdN0jck0qdV1ENAZBZFy7SOAC2lPkzRaIl5F94GpJ3DtT9HYdBoDQ0wBF3ErbZGHbZmeVmzudfSfmAmk3dM31Wfqcn79c+QXT34GmcoLAcogTuHBF9H0vs2eSXBo07OZY1r3VnE5g01HCJtGY3txS9n4IuxVOJyipTHW3hzTcb9V0P8As1hpu1xvm6ztU/hth4dhzNpgEEEEkkyIvc9ihUlQauzn+26U1apLGwavWOsZgOHYoeMwHOP1aIaNRxJ7exdTOy6EkmkwySTLQbkzPfKdbg6bZimwdzR8EbJD05MTtem7nei6IpsHVn0u1UVDZznsYzm6kamGOkRJ4LqmF6qeJPFTDhUOcbZgq+w6jsJQpinUOWpUcREESTBOlrq/5NbOdSwrqZYWnM8gEyYJEcVeHvTbm3UZYbqi8b1dkTZ7m0sPTY5wLmNAIbe++NFMp12OEh48YnuN1WY+xMd/imzQytHVIib2PgV58cbc2mdTktUy5IZvLfUimn/L6vgs9WfkkioGgaguEe1MO20xoiC93Btm6x1jbcdJW3aX8J3NOHM3I3PYFh6vKOrmAzNpgtJAAk68T8FEqbcfmI5+0Dcztncn2l/BPIbmridYAjjBlRKO0HNnMMw7ANfgs5yf2g6q+qDULw3LExaZnQC6q9qbRyVajTUcINhmIEZRuWEcb7rRbktbOhU9oh2jfOfcEv572D1hcldtCQ453u6RiXOIiGpeDqZgTzbnS4+5dKgYvIdTdtMDUsH4h8Ulu1GnRzD3Fp965lQqEZgKJMOOjR2JWBqTn/ZnrnRkwd4sqWNk9xHUPnX9Qq7GETI7VhaTstNpBLeqZDXNtI3rRbHrBzXw8ugjUkxbTpaLPPielsvHkTlwXey3ZIMXMOnuKn1WDMS3SbdyzuJLuZBJPRrsA3W5xnqur6hiKb5DHscRqGuaY4SAbaK8UEkqFOXI+Ago2H2jRe4sZVY9zZlrXAkQYMgdqJm0aLqnNCo01BMtvNtexdCMh6voU23FMaOk9gji4D2lR8TtWiH8yXdMkCMrok3AJiNFjuUOPp08Q9paSTldIAOrANfBNK5Ck6jZtXbWoD+NT/ME39N4fdWae6TproFhcDjC4EsY4gudvaIumPpR4zNFJ5Ic7fN5mJha6oy3Oh1tp0mta8kw+csNcZjW0W8VG+nqP8/5Cs/jMY75jQe1kuzuGUzbrTMCdypxjq/2I/z/APFKuLByo2P9rW2ii6/Fw4T2p/Z/KE1arafNgS4tnMToJmwXMTUMi7t9ibDsF1dcioOMpkyTmeRcxZjt29SuSlJmnxHKmoDAp0+sRcuOhI4jgo55W1Scp5oSWtsCTeJ1d2rKVcvOF7h/EM3njo1JwmV+JYQ0QX02jdHSG4KWwt2bTam3alJ72Co1oaAQC1vDt7VVVeVVSG/3kdsBo3dyjcqZGIqEhpgADNqIEmPP1LMYXLmEkCADeDuG6UsT4Q5vk3e0tuPbQwz+fcA8VJI+tBEaDgqo7cqOY487VPWvL/dCe2rSmhggHD928gxrLhoJVVzgFJzcwkuI3a5gtK5IbZrdk1C+iXHNqetM+tZhuOD39FjjZ2tt4vcrT7FB+b6zd14A7tFnmYYsqA9MjK76ptdsCzVy4f2yOjJ+uJAr421RnNnUgm0Nnje6PaFZ4dZ2WBNt8vcN+/4p+tgug95a8EuNukATmAFtLqZW5K1qr5DQwby8yes7dc8FtNGUbKDZ7i57zUDnW6MjNvSNrYJ73jm2GwvYN1JixW3oclWsuakk2sIGs8U4dlNbJz3I3ADQ8dUKqCmU/ITDOpiq17SDLb8bG0qh5W4So7Evc1hIIbcRwHatzs2jlqVYJIOUg+F48h5rL8q8HUNUltN5E6ta4jqtGo8Vyr9zN3+sqKNGoMPHNnrO79G7oVvgmPhwygdI65huB4JmjSeGtkPHTbYt7GTMjvWg2JQYaLXHMSQCZJBm40BtoumLpmDVlPSp1JfBYJcdQTuHalbOo1P2kOZ1zMg6kAiLrV0aFLh6yfaVPpbKoESKbZNyRMk8bFU5choYunh6hohrQ02AFyDYjs7Fe7HY/pBzQCSB0TPfwjVWVfZNBjbNI4AOefISmWuawhwMzrJ0I0HsXJ1Wb8XEvGqkOcpKIFOq0aCpS8ppJrkzydGENRzX5s8TaLhxPHthSNv12OaSL58peNBIyxH5QUVPaG7TeezxOu5RDqYJJMc3bGdj8nGYes+sKryamfonLAzuzHS6l0djMbWNYOdJLjltEu13Tv4qPW2oDFwLx2+tOu2kMsE62tcn9Vt8mKdMgGI2RTdUNcl+YODoBgS0QLRwCoNv4B5xDy10dGnbKCeraJWg2fis7Se+2vjKcxVBjofkDiWsuQbCIiTvsiGdWmDVxMPgQGmo0mTmmdNWifalYfA5jUIqub0yYaWkaiZsSN625wNEDMaTJ3y0e2FAq1WhwhoBBPRAAkRqQLR2rXJnqJnoVpwg+ZhmZ0MquvMG5cbn8Srxs9vpVPzuW1wlQOaDGt7iBfsPf6k+WgWstIZE4jcbKj+xuDmcjydb1HeKmYDk5hqLw+nTIcJg5nGJEHUwqQ/KiJgYDzr/AApq05L8uXYus6l81ZTDab6kioXHoRAjKNZTX0XwPjktg9Th2kzMnMb8dVIw3J3Csc1ww1MEOaQcuhkEHvss2/5T6wMDCUR31Hn/AGp7Y/ygV8TiKFF1Ck0PqtBLXPJ9ah8oaqzUYzYlEveXUKbjmddzGmbmNQm2bHojTD0h3U2D3Kr5TcusRQr1qbadEhjyBmzSYi5g6qirfKdigY5vD/ld5dZKDVIcqtm3dgxYc2OiLdEWHZayQcJwYPILP8p+WeKoU8I9gpft6POOzMnpSOr0hAgrPO+UvGR/CHcz9VQrRsMcyJGicc5U+ztp1MRh+fqEF7s0kCB0SQLeAWMfywxJMZx4Bo9y58P+crNclao23KA/sXfep/8A6NVoTc965XX5SYip0HVJBcBEC/SBVhyr2nWZUAbUcAWgxPHsW7MUzodQsPWcAB2wgzE4Vm9k/mK4vU2zXn9671IMx+IcCeddZTyXsjs9faVOrDaZPRubQL8PJOUdtU6bQwh0tEWj4rBcgH1TUqh7y7oMIkzFyqrlvVeMUQ17gMrLZiNx4Fc6T7zNW127Onu5SUJ+v+X9UPpigePixcr2XUd82rnMSQTBkn6rd5VE/FvOr3eZ+K3VmTaO4HaFA8PypTMfRGj2j1Lhheby4+ZROOgmZjTtTJ2R2/H4phbAcJM6foe0LK43akFrXFw0EjWR2Ddb+t0HB1cjGtuMvHuAPf8Aoqlu1DzjiY9EEjW4nXXU2XnTcssn/CW/4W1XbOY62N91hpu8FIwu0MxIdMtBzRB4ak20lUWKq05JdEneJABbEQEeH2wxrRAB1Jne49YkcLwoeBNcIi35LqrtDpOApgSNcocLTeQQdYTLNrmS3hcETMkkD3KPh8fBhsOBHVkbzaPWmNqv6TXCJab7zx03gX9SFFt00Fms2VicrHNcXAjcYv3GbFON2q0BgcahcCIGbM1wElpbA0HonQgrN4fbTnsOVt2kDXc79ZHin2FxYahe1rGDJnP1jmsxnF02gWGUyqSkVtwaHH7WGTJSFSqXdYlsWmcwh1u2yqKONIJMTluJvJvc8e42Uant2mabm5A0R0joXCYGZ2vlxlVvOik7KHksfBE6id2bfHHhCmW0vPlCbOgUNqsdTdUy5cjhDREN3Q21reKgv5RXPRcN3WaNOwCyo6WLGQDOOlpE6jSbKIK03ie2Uu9lqkOyhq0mEgsBiO/1+C1/yW4aMTUP+BU1HEtHknOSWzME5nNPtVk5S7R5LrAGbOE6GJhW2Fo08I6pzDqRcKWR1XOZeZlwZTMggwOlpfsXtJNFKPNnOm0aZgAERYk77Rx4q25CU2/SGGBbJNUQdwgOPuVvTw1Br2tNKmC760vdq6ASMwAvK2GB2JgsNUw9ckAuIe19R4a1gfORhvF5MTxhQuFZSjyYrl+xvzzFA05JqWdwGVo0/rVZeqwF0lkwDbTXSV2PaexcNWxFR1Sm14yOqvqDMJgTlBBg2Hcsljdl0ahBYxjGuaLOmxN+tJkX19QWeF8c+h5cb8jXL9rRQ2aXMn+7uA8ebKwFYCewnTx0Wq2/tqcjKzhUZQAazm8jyLNnK4tAIsNZNlCwe0sCWEVaQLokOa1wh0xlcGm9rg+a2TsykjV8nWPfgszafRY1znERABc4G2phYuhs9ruacYaHkMteJIE95W42HSLsOx1AuFKoH0srQTI/aEufPVbIHnwWXxNdmamxjRlNLnGtJPRqR1rncRHas8cUpyZrJ/ikIr8n2Nc5rKjXQdHAZgDBkx26e1RNvsdUdIMkNLr2sLwPcrXD4uo+k82dVLibADNDbeorMYrEOzOk7nNPcIEefsWnFiaSX2Ns2O9z3NzNBawOJOlxIHeo1KmLtIBJEzwgceHxTtKs+o5xLhOUN9Hoi0dqih5Lons8LqX9Bo6s2nycCKtYjQsZHmYntVb8oDR867Sxp8LhWPyasJr1Wa9BvtPxVV8oDj88P3G+9cy/cay/WMbDqgUK7DvBN+0R7lVPp5XBpGmsHVT9iOAZVP8AIfeoGJrAvJ0XVxZzXyN1BFheb/ol4V8OBAkjT9Uh56V+/wAFp6mJY6gBTAHRAIAGoABBtcnVY5ZUMTjcQCAYgHX9OzVQqmMDy2wblM6C06+sSio13tbGUuGgkTpYa9+iVhsgJeZOkhoiCJJaL2Nt+4rnjCrJDxJYQ+WnMQ3LGkDUm0xFweKrjhiATY+zX2q0w+Izc7Vkh1spv1bDKL6QQE3Vyljc0kkC06QCM0HW4N+1arhDYxTwwADmuJeASQRGW4A7Ha+CcobXfBZEzbf3RA1nzuncK5jQM1PK6ZDrnONCPAwfFQW0y+oBTnMXW3GRoQR7exNpMVGrpVaODa7nmtfUe0jmPRk5mmo76kETl1sqPH7UqYlwGZuVoIYIDWtAvlaBoPgrrGcjWMoc6a01XMacuYOGZ8y+RfKCDc7yskMQxtNzI/aF1nhxjJ9ZsaX4o7dFP6HKLnZgHSNdTFu/yVvjMrg0teWm4O8RB6UbtFmnPNuxW1HCVHsZEkeRAJMgTE/oUnD2RQ+MY8OgktkNEgmNQMzd2ii1MYWkiYjv9ymYesXMyFk9I6TLYjQDS972QqYMvOZoJB+7qLH1gpKH0UkSNl06lYinRl5MaAkiCIsL7wFp6+za7Ocp06LzTY7KT1QZA0zHpCLEtkDKrb5E+Tpc7EudUAA5tpY25IOYzn3A3Fl22m2BAsBYDguie21M1TWp58wuxXukZS17AHDm2uqNPSAy5mB14JNrqbs7ktXqioxgfUa1zQ5kPYYDnNJmqGgRl01vIXeElrANABPAKU2PyYnC7AexhwvO1Dlpt6TRmGSC3mybXEzbcsyzY20RVe35kRTH7uoA0l47Wc6MluJ3LryCQ7ZwDlByE2nXeX/MnnMOl06LYI0satxvsqeh8muIYf7wKlIbgWZi7dINNxAvGq9LoJckvl8nDdn7KqUcrWVHsYG5TAqDoDdGW5O+eKA2FQFzBgb6VgOE5F3JxCaqU2OEFoIPEAgqfyKTXs4JVoYYGBTaR2McN0bgFHOEwn2FP/tu+C7y7Y2G30Kf5G/BIOwcL9hT/KFLjJnr4uv6WEVHtnCRhsJ9hT/7bv8AigMNgvsaf5HfBdxdyZwh1w7PJI/stg//AI9PyS1kbf8ApdLX6/8AhyjAYGgyHUopE6lgcCRrB6CkVdm0Hkudkc7eXC/maa7CzCUwAAxgAsBlFu6ycGGZ6DfytTSaPGzZe5Js419EYb/D8G/+JLGxsN6TPy/Ckuw/Nmeg3yCbrYelHSYzdq1vwVcmZyQbLw41yfld7ObVNykw1CjRlj285MMgHf8AebBXX9t42jQaCGUyTPRytkwO611z/bWIZiXNc9lPoAwIAbJgl1h2DuhRKVAc4p7KLf4o9h13SomGpMDjmiHCXQDaXWMnfYm3Fbd+AYOkBfWeFr/+0rG7Ip1GZcsNBzADKJOXJcxey545H7MtTnO0KbWZg0WdBFzIIN7aFQK9VxI1MWXSm8m8KCC6nmAJzNlwB4ae47kjF8l8NrTp5QRBEk3nfK0WeNci0Zzt2L6MXPEHwsPJNNztIIJBixBvGi2tbkbTOjy03OgiZ46ojyPAg5icvEHSZ3K+/CgpmPquq/Xc6HcSbgaAiU21sGRu17O1bd/JJuaS4wbwOFzqo9bkg0mQco8SO/vT+REXJksM5ge3O0uZMugwSOE7lq9i031jVq0MO402gu1bEAOkS43OtgpWF5L029YZ58J0Klv5PsyltNz6ZcD1HEed7j+tyXyIlIpcPn6TchY85TcF3RBnW0d08E1iKRzH9ofBj48IMLU09mkMy53Ega2njB46b0h2ygdXEneTPuUvOijffItRp0sBncWipWqOc45rkN6LO4Ae9dEZWadDPcsJyDo0hgqQdlzS+dPTd2yr79l9XXgCfcuvK33GVCK1Rfc4OKAqt0kT36KjfhGnWfElJOEpiLHsgn4KLL1L/N2owVQPwzTqXeJPqTFTZbHEEl1tIJHsS2+g1NMhKz7ME4dWo/8AMUbsPV+1dbtKewtCz2nRqPblpuDTIlxvbhAVPUwOOAhlZkDSWNGn3dEHtqj+K4+B8bJBdiN1QgEjUGw8lLQ6otMDTxX8V9K9+i0z3aqxkrPDn/tHbjv+CkMxNcauae9sJ2kLUu5QlUGJ2nVixYDvsSo1PauJzXdSyxEZX5ieOvsCLQtTUEoiVRHar95B/C73FNO2xUg9DyzD2hFj1J+1duUqAGa8zYdlz71kdv8AKNuIhjJa1vS1uXDu0AlRH4A5i5wLiZ3OECTbfOuqabsRhBtUbJk9Hw1kjjosZOb8DorsS9n1jbj657JlMuZSJMOMA8Y1OlldUdg0wCDed759gRM2CwGQJkQYt43lY9uQqKeuQBMmIi8TB001Qp1QAOlM/wDoSFY1NgNFwH37Z000CjU+TTpAEtkxx4dIucbXScJWGrAxwtcXN4GnbO4Jp+UySQALW7PHs9akV9ivcSIdbfYg8dNybqbFfrGu4A6+fj5pay/gakJ7gYIEz7bepA1JvuEeZ3R4Ka/Z9WwFNxG/tM336FRm7Oq5iDTcB2Rr709WTTA1k2nXjppuPHW3YiLSNBPwShga/wBm/vEe8qI6jVmTTf3RxU0x0OlxichECTPmYO9IqTE5TcWOs2lKD64bHNVIH8pkX3CbqK7FuaJdTc3jmaRw0AT0ZLH4IF792qbex86BN03ScvTnTQ+oAJ7mXG4c4fgKWrEb7k/gmsw1Fjm9IMBcCBOY3M9t1YGnT9Bvl+ijU8ZSA/eMgC1wAAnaeMpG4qMPc4fFei3bs2SrgWzCtJ6rR4Ivo9g0B8CR70tldvpDzCWKo4jzCkYkYNg3v/O/4pXMDc+oPxuPtSg6UppCQDQo7+cf5j3tSMlSf3r/AByH/apQcEHEICiFUo1D/FcfAD2JDKVZvVqD8TSf9ynyiskBH56uPsz+F3ucj+c1/Rpx3vCkZwEnnO1MQ2MRW+zZ4PPvaie876Q8HC3+UJ7nAjzApARc/wDhO8Ht95ROP+C/8zP+SmAtSxSCAIAcPs6n+U+wpqoxvoVCO6fCxViWJJpdqQFeHN9CqP8A63e5Fz1L+cd9OoPXCsHU+1GaRQBX8/T9L/K/4INxFP02+II9oU6DwKPL2lFgRBiaX2jPMJXP0vTZ+ZvxUsN/owicwbxPkmBFbVpHR7PBzUuafpN82pbsNS3sHkE2/BUvs2H8IRwACyn2epDmmdiQcFS9Bnki+Y0vQb7E+AFmg3gFEfhHXgMjuITx2fS9HyLvig3BNBkZhH87vYSnSAjDBng0W3FB2Bm5jzPxUg4Mem8dz3e9F82/xKn5v0RQqKl2x2Hj6kPoZnE+SxyU1UKjXfQbdx9SQ7YYBkOAPcssdEhIdGxZsx25/rcEoYCsNHn8zlkWpSANXzWJH1n/AJkg/OeLj3gH3LLPRMU2BrW1sUOP5R8Eh+08SPqAjtafcsw5GnYrNN9NVhrTb/mCcbtx++l6z8Fk3aeaiVtEws3I5RDfSPmD7Uv6fbvpvHgPiuX4jrJzcnQWdQZt6nwcPw/AlPN2/SGrj4td8FykIPRQbHWxtyjpnHr+CW3bFH7RviVx+rr4lIeigs7ONo0j9dn5gnBi2biPMfFcMdolDejVBsd0FcI84XD6KtcLuS0Q7Ot5u9Kzdi5rR0Ru1ScRnSTUH9BILmrnBSSpA6MUkj+oXOglhNAdBaEXguehJcqEdFuhdc4G5KKVgf/Z"
+                            alt=""></div>
+                    <div class="flex flex-col gap-4 p-4 ">
+                        <div class="flex flex-row justify-between items-center">
+                            <h2 class="text-[21px] font-semibold truncate">High School "Zef Lush Marku"</h2>
+
+                        </div>
+                        <p class="Inter">2020 – 2024</p>
+
+                        <p class="Inter">Grade: 5.00</p>
+
+                        <p class="text-[14px] truncate "
+                            title="I was part of the math-focused class, where I got to dive deeper into advanced math and logic. Also won first place in our school’s chess tournament, which was a fun way to put my strategic thinking to the test.">
+                            I was part of the math-focused
+                            class, where I got to dive deeper into advanced math and logic. Also won first place in our
+                            school’s chess tournament, which was a fun way to put my strategic thinking to the test.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.finki.ukim.mk/" target="_blank">
+
+                <div class="educationCard ">
+                    <div><img class="h-[200px] w-full object-cover rounded-t-[19px]"
+                            src="https://www.finki.ukim.mk/sites/default/files/u620/2_4.jpg" alt=""></div>
+                    <div class="flex flex-col gap-4 p-4 h-full">
+                        <div class="flex flex-row justify-between items-start">
+                            <h2 class="text-[21px] font-semibold truncate">FSCE at "Cyril and Methodius" University in
+                                Skopje</h2>
+                        </div>
+                        <p class="Inter">2024 – Present</p>
+                        <p class="text-[14px] line-clamp-3"
+                            title="I’m currently studying Computer Science at the Faculty of Computer Science and Engineering (FCSE), part of Ss. Cyril and Methodius University. The program focuses on both theoretical foundations and practical skills in areas like software development, algorithms, databases, and system design. It’s been a great environment to grow my knowledge and work on real-world tech projects.">
+                            I’m currently studying Computer Science at the Faculty of Computer Science and Engineering
+                            (FCSE), part of Ss. Cyril and Methodius University. The program focuses on both theoretical
+                            foundations and practical skills in areas like software development, algorithms, databases,
+                            and system design. It’s been a great environment to grow my knowledge and work on real-world
+                            tech projects.</p>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="bg-[] w-[70%] borderBotoom">
+            <h2 class="text-[40px] garamond italic font-[semibold] pt-12">Informal Education</h2>
+        </div>
+
+        <div class="w-[70%] bg-[]  flex flex-row  gap-8 pt-12">
+
+            <div class="w-[400px] h-[100px] flex flex-row border-[2px] border-[#3C9189] rounded-[15px]">
+                <img src="images/heroAvatar.jpg" alt="" class="h-full rounded-[12px]">
+                <div class=" flex flex-col justify-center w-full p-4">
+                    <h1 class="text-[21px] font-semibold">Backend Developer</h1>
+                    <p>Digital School</p>
+                    <p class="italic">2019-2020</p>
+                </div>
+            </div>
+            <div class="w-[400px] h-[100px] flex flex-row border-[2px] border-[#3C9189] rounded-[15px]">
+                <img src="images/heroAvatar.jpg" alt="" class="h-full rounded-[12px]">
+                <div class=" flex flex-col justify-center w-full p-4">
+                    <h1 class="text-[21px] font-semibold">Frontend Developer</h1>
+                    <p>Digital School</p>
+                    <p class="italic">2020-2021</p>
+                </div>
+            </div>
+            <div class="w-[400px] h-[100px] flex flex-row border-[2px] border-[#3C9189] rounded-[15px]">
+                <img src="images/heroAvatar.jpg" alt="" class="h-full rounded-[12px]">
+                <div class=" flex flex-col justify-center w-full p-4">
+                    <h1 class="text-[21px] font-semibold">React.js</h1>
+                    <p>Edumind Academy</p>
+                    <p class="italic">2023-2024</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="h-screen  border flex flex-col items-center pt-[140px]" id="skills">
+        <h1 class="text-[50px] garamond italic font-[semibold] mb-14">Skills</h1>
+        <div class="w-[80%]  h-full grid grid-cols-2 grid-rows-2 gap-4">
+
+            <div class=" flex flex-col p-8">
+                <h2 class="text-[30px] garamond italic font-[semibold] pb-8">Backend skills</h2>
+                <div>
+                    <h4 class="pb-4">.NET / ASP.NET Core</h4>
+                    <div class="w-[full] h-[10px] border bg-[lightgray] rounded-full">
+                        <div class="h-full w-[60%] bg-[#3C9189] rounded-full"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" flex flex-col p-8">
+                <h2 class="text-[30px] garamond italic font-[semibold] pb-8">Frontend skills</h2>
+                <div>
+                    <h4 class="pb-4">HTML&CSS</h4>
+                    <div class="w-[full] h-[10px] border bg-[lightgray] rounded-full">
+                        <div class="h-full w-[90%] bg-[#fb7546] rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="py-4">JS</h4>
+                    <div class="w-[full] h-[10px] border bg-[lightgray] rounded-full">
+                        <div class="h-full w-[80%] bg-[#fb7546] rounded-full"></div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="py-4">React.js & UI/UX libraries</h4>
+                    <div class="w-[full] h-[10px] border bg-[lightgray] rounded-full">
+                        <div class="h-full w-[75%] bg-[#fb7546] rounded-full"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="borde flex flex-col p-8">
+                <h2 class="text-[30px] garamond italic font-[semibold] pb-8">Tools & Platforms</h2>
+                <div>
+                    <h4 class="pb-4">Git & GitHub</h4>
+                    <div class="w-[full] h-[10px] border bg-[lightgray] rounded-full">
+                        <div class="h-full w-[40%] bg-[#2976f2] rounded-full"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="py-4">Firebase</h4>
+                    <div class="w-[full] h-[10px] border bg-[lightgray] rounded-full">
+                        <div class="h-full w-[30%] bg-[#2976f2] rounded-full"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="borde flex flex-col p-8">
+                <h2 class="text-[30px] garamond italic font-[semibold] pb-8">Soft Skills</h2>
+                <div>
+                    <h4 class="pb-4">Team lead</h4>
+                    <div class="w-[full] h-[10px] border bg-[lightgray] rounded-full">
+                        <div class="h-full w-[50%] bg-[#f22929] rounded-full"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="h-screen  border flex flex-col items-center pt-[140px]" id="hobbies">
+        <h1 class="text-[50px] garamond italic font-[semibold] mb-14">Hobbies</h1>
+        <!-- <div class="HobbyDiv">
+
+            <img src=""
+                alt="" class="hobbiesImg">
+            <h1 class="hobbiesH1">Basketball</h1>
+        </div> -->
+        <div class="flex flex-row gap-16 z-[10]">
+            <div class="hobby">
+                <img src="https://finnsbeachclub.com/wp-content/uploads/2024/09/basketball-court-ball-and-sports-match-or-competi-2023-11-27-04-58-17-utc-1024x683.jpg"
+                    alt="Background">
+                <h1>Basketball</h1>
+            </div>
+
+            <div class="hobby">
+                <img src="https://www.advancedsciencenews.com/wp-content/uploads/2021/08/lisa-keffer-i0kB5B9J8Ds-unsplash.jpg"
+                    alt="Background">
+                <h1>Table Tennis</h1>
+            </div>
+
+            <div class="hobby">
+                <img src="https://res.cloudinary.com/simpleview/image/upload/v1666728924/clients/sunshinecoastcanada/Mountain_Biking_on_Mt_Mahony_d5dd14fb-5889-4a5b-94ca-bd861033814c.jpg"
+                    alt="Background">
+                <h1>Mountain Biking</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class=" h-[400px] w-full bg-[#3C9189]">
+        <div class="w-[70%] h-full m-auto flex flex-[1]">
+            <div class="footerDivs">
+                <h1 id="navName" class="pt-3 text-[white]">
+                    <a href="#start">
+                        Abdullah Miftari <br />
+                        Personal Web
+                    </a>
+                </h1>
+            </div>
+            <div class="footerDivs ">
+                <h1 class="quickLinkTitle">Quick Links</h1>
+                <ul>
+                    <li class="footerLi"><a href="#biography">Biography</a></li>
+                    <li class="footerLi"><a href="#education">Education</a></li>
+                    <li class="footerLi"><a href="#skills">Skills</a></li>
+                    <li class="footerLi"><a href="#hobbies">Hobbies</a></li>
+                </ul>
+            </div>
+            <div class="footerDivs ">
+                <h1 class="quickLinkTitle">Contact</h1>
+                <ul>
+                    <a href="https://www.linkedin.com/" target="_blank" class="m-4">
+                        <img src="images/linkedin.svg" alt="" class="heroIcons"></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="m-4">
+                        <img src="images/facebook.svg" alt="" class="heroIcons"></a>
+                    <a href="https://github.com/" target="_blank" class="m-4">
+                        <img src="images/github-logo.svg" alt="" class="heroIcons"></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navLi a");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach((link) => {
+            const parent = link.parentElement;
+            parent.classList.remove("activeLi");
+
+            if (link.getAttribute("href") === `#${current}`) {
+                parent.classList.add("activeLi");
+            }
+        });
+    });
+</script>
+
+</html>

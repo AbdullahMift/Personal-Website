@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  font-family: "Inter";
+  font-size: large;
+  font-weight: 700;
+  color: rgb(139, 139, 139);
+  text-transform: uppercase;
+  /* background-color: aqua; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+.navLi:hover {
+  border-bottom: 2px #fb7546 solid;
+  color: #fb7546;
+}
+
+.activeLi {
+  border-bottom: 2px #fb7546 solid;
+  color: #fb7546;
+}
+
+#navName {
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.9;
+}
+
+.borderBotoom {
+  border-bottom: 1px lightgray solid;
+}
+
+.Section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.heroTitle {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fb7546;
+}
+
+.knowMoreBtn {
+  width: fit-content;
+  padding: 10px 25px;
+  border: 2px #fb7546 solid;
+  border-radius: 7px;
+  color: #fb7546;
+  font-weight: 600;
+}
+.knowMoreBtn:hover {
+  background-color: aliceblue;
+}
+
+.heroSocials {
+  border-radius: 30px 30px 0 0;
+}
+
+.heroIcons {
+  width: 40px;
+}
+
+.garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+}
+
+.educationCard {
+  gap: 40px;
+  width: 400px;
+
+  border: #3c9189 2px solid;
+  border-radius: 20px;
+}
+
+.educationCard:hover {
+  transform: scale(1.02);
+  transition-timing-function: ease-in-out;
+}
+
+.Inter {
+  font-family: "Inter";
+}
+
+.hobby {
+  margin-top: 30px;
+  position: relative;
+  width: 350px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hobby img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%); /* Optional: darkens the image for text contrast */
+  z-index: 1;
+
+  border-radius: 25px;
+}
+
+.hobby h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 2.5rem;
+
+  font-weight: 700;
+}
+
+.footerDivs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 34px;
+  ul {
+  }
+}
+
+.quickLinkTitle {
+  font-size: 25px;
+  color: azure;
+  font-weight: 300;
+  border-bottom: 1px white solid;
+  padding: 3px;
+}
+
+.footerLi {
+  color: #fff;
+  margin: 20px 0;
+  height: fit-content;
+}
